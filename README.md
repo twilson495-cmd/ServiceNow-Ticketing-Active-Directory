@@ -1,13 +1,13 @@
-# Home Lab: Ticketing System + Active Directory
+# Home Lab: ServiceNow Ticketing + Active Directory
 
 This is my home lab project where I practice handling real support tickets
-and resolving them against my Active Directory domain (ENTERPRIZE.COM). I'm
-using a ticketing tool to receive requests and my Windows Server 2025
-domain controller to actually fix them.
+in ServiceNow and resolving them against my Active Directory domain
+(ENTERPRIZE.COM). I'm using ServiceNow to receive requests and my Windows
+Server 2025 domain controller to actually fix them.
 
 ## My setup
 
-- Ticketing tool: web-based ticket dashboard
+- Ticketing tool: ServiceNow
 - Domain controller: Windows Server 2025 Datacenter, EC2AMAZ-E3K8IDE
 - Domain: ENTERPRIZE.COM
 - Access method: Remote Desktop Connection
@@ -16,14 +16,13 @@ domain controller to actually fix them.
 
 ### 1. Getting the ticket
 
-![Support ticket](images/01-support-ticket-password-reset.png)
+![ServiceNow incident ticket](images/01-servicenow-password-reset.png)
 
-Ticket #12345 came in through the web form, flagged as Negative sentiment,
-topic "Unable to reset password." A customer named Arlo Wilson wrote in
-saying he'd been trying to log in for 30 minutes, requested a password
-reset link three times, and never got an email, even after checking spam.
-He'd been a customer for two years and said this had never happened before,
-so he wanted it looked at the same day.
+Incident INC0010007 came in through ServiceNow, submitted by Arlo Wilson,
+category "Password Reset." He'd been trying to log in for 30 minutes,
+requested a password reset link three times, and never got an email, even
+after checking spam. He'd been a user for two years and said this had never
+happened before, so he wanted it looked at the same day.
 
 ### 2. Resolving it in Active Directory
 
